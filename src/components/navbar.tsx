@@ -31,7 +31,7 @@ export const StyledNav = ({ links }: LinkProps) => {
                 className='fill-greenish-light inline mb-1 ml-4 mr-2'
               />
               <NavLink
-                className='pl-2hover:shadow-md hover:shadow-greenish-light rounded-md text-bluish-dark'
+                className='font-bold pl-2 hover:shadow-md hover:shadow-greenish-light rounded-md text-bluish-dark'
                 to={n.href}>
                 {n.name.toString()}
               </NavLink>
