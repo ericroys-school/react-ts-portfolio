@@ -1,9 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quicksand&display=swap');
 *{
-  font-family: "Special Elite", Georgia, 'Times New Roman', Times, serif
+  font-family: "Quicksand", Georgia, 'Times New Roman', Times, serif;
 }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+#rocket{
+offset-path: 
+path('M50 16 L463 16 C569 16 578 121 463 121 L 50 121 C -22 121 -22 16 50 16');
+
+/*path('M463 1C569.191 1.8862 578.764 120.417 463 121 L 463 121 1 121 M74.4999 121C-22 121 -24 1 74.4999 1 L463 1');
+*/
+animation: buzz 5000ms 2;
+}
+
+@keyframes buzz {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
