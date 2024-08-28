@@ -1,11 +1,11 @@
 import { RoleId } from '../types/role';
-import { StackName } from '../types/stack';
+import { StackId } from '../types/stack';
 
 export type Project = {
   href: URL;
   name: String;
   description: String;
   role: RoleId[];
-  stack: StackName[];
+  stack: StackId[];
   order: number;
 };

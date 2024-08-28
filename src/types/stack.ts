@@ -1,12 +1,18 @@
 import { IconType } from 'react-icons';
-import { FaJava } from 'react-icons/fa6';
 
+/**
+ * Define a Stack having an id, name, and icon
+ */
 export type Stack = {
+  id: StackId;
   name: StackName;
   icon: IconType;
 };
 
-export const OStackName = {
+/**
+ * Define the values for keys and names available
+ */
+const StackNames = {
   JAVA: 'Java',
   TYPESCRIPT: 'Typescript',
   PHP: 'PHP',
@@ -34,4 +40,8 @@ export const OStackName = {
   EXPRESS: 'Express',
 } as const;
 
-export type StackName = keyof typeof OStackName;
+/**
+ * Make StackId and StackName accessible
+ */
+export type StackId = keyof typeof StackNames;
+export type StackName = (typeof StackNames)[StackId];
