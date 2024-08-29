@@ -12,7 +12,7 @@ export type Stack = {
 /**
  * Define the values for keys and names available
  */
-const StackNames = {
+export const StackNames = {
   JAVA: 'Java',
   TYPESCRIPT: 'Typescript',
   PHP: 'PHP',
