@@ -1,5 +1,5 @@
 import { TfiWrite } from 'react-icons/tfi';
-import { RoleNames, Role } from '../types/role';
+import { RoleNames, Role, RoleId } from '../types/role';
 import { BsPersonArmsUp } from 'react-icons/bs';
 import { FcDocument } from 'react-icons/fc';
 import { FiCodepen } from 'react-icons/fi';
@@ -28,3 +28,13 @@ export const Roles: Role[] = [
   { id: 'PRESALES', name: RoleNames.PRESALES, icon: SiWebex },
   { id: 'CONTRIBUTOR', name: RoleNames.CONTRIBUTOR, icon: BsPersonArmsUp },
 ];
+
+/**
+ * Get a Role using RoleId
+ * @param {RoleId} id
+ * @returns {Role | null}
+ */
+export const getRoleDetails = (id: RoleId): Role | null => {
+  //generally we'd sort this first but the amount of data here is trivial
+  return Roles.find((s) => s.id === id) || null;
+};
