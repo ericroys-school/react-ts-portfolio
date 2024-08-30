@@ -18,10 +18,14 @@ export default {
     fontFamily: {
       special: ['Special Elite', 'sans-serif'],
       amatic: ['Amatic', 'sans-serif'],
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+
     },
-    extend: {},
+    extend: {
+      dropShadow: {
+        'abc': ['0 10px 8px rgb(198 28 28 / 4%)',
+                '0 4px 3px #847d7b']
+      }      
+    },
   },
   plugins: [],
 };
