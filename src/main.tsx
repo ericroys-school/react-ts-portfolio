@@ -4,7 +4,7 @@ import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { NotFound } from './pages/notfound.tsx';
 import { AboutPage } from './pages/about.tsx';
-import { Home } from './pages/home.tsx';
+import { Portfolio } from './pages/portfolio.tsx';
 import { Contact } from './pages/contact.tsx';
 import React from 'react';
 
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/portfolio',
-        element: <Home />,
+        element: <Portfolio />,
       },
       {
         path: '/contact',
