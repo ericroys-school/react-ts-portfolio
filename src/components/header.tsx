@@ -11,7 +11,7 @@ export const NavHeader = () => {
           <h1
           className='font-bold bg-gradient-to-r from-bluish to-greenish-light font-special m-4 text-center text-4xl text-wrap
             w-3/4 p-4 rounded-md border-bluish-dark border-solid border-t 
-            border-e-0 border-l-4'>
+            border-e-0 border-l-4 select-none'>
           Eric Roys
                    
         </h1>
