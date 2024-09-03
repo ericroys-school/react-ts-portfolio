@@ -1,28 +1,14 @@
-import { IconType } from 'react-icons';
-import { NavLink, To } from 'react-router-dom';
+
+import { NavLink} from 'react-router-dom';
 import StyledIcon from '../lib/styledIcon';
+import { LinkProps } from '../types/styledNavLink';
 
-/**
- * Properties for links array that can be passed
- * through to StyledNav
- */
-export type LinkProps = {
-  links: StyledNavLink[];
-};
 
-/**
- * A StyledNavLink type definition
- */
-export type StyledNavLink = {
-  name: React.Key;
-  href: To;
-  icon: IconType;
-};
 
 export const StyledNav = ({ links }: LinkProps) => {
   return (
     <>
-      <ul className='flex w-2/5 flex-wrap mr-4'>
+      <ul className='flex  flex-wrap mr-4'>
         {links.map((n) => {
           return (
             <li key={n.name} className='flex pr-5'>
