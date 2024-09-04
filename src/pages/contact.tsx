@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NewContact } from '../types/contact';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -12,7 +12,9 @@ export const Contact = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting },
+    reset,
+    formState,
+    formState: { errors, isSubmitting, isSubmitSuccessful },
   } = useForm<NewContact>({ resolver: zodResolver(ContactMeSchema) });
 
   //our modal/dialog management start with closed
@@ -21,18 +23,25 @@ export const Contact = () => {
   const closeModal = () => {
     setIsOpen(false);
   }
+
   const onSubmit = (data: NewContact) => {
     setDisplayText(`Thank you ${data.name} for the message. 
     At this time, your contact info and associated message is
     not stored so don't take offense at being ghosted.`)
     setIsOpen(true);
-
   };
+
+  useEffect(() => {
+    if (formState.isSubmitSuccessful) {
+      reset({ name: '', email: '', message: ''});
+    }
+  }, [formState, reset]);
+  
   return (
     <section
       id='contact'
-      className='flex flex-wrap flex-col mt-10 w-full content-center'>
-      <h1 className='text-4xl font-bold text-center drop-shadow-abc'>Contact Us</h1>
+      className='flex flex-wrap flex-col mt-10 w-full content-center '>
+      <h1 className='text-4xl font-bold text-center drop-shadow-abc mb-10'>Contact Us</h1>
       <form onSubmit={handleSubmit(onSubmit)}
         className='mt-4 content-around flex flex-col w-1/3'
       >
@@ -72,7 +81,7 @@ export const Contact = () => {
           disabled={isSubmitting}
           className={btnclass}
           type='submit'>
-            <IconWithText icon={SiMinutemailer} iconClass={'fill-redish'} text={'Submit'} txtClass={'font-extrabold text-bluish-dark'}/>
+            <IconWithText icon={SiMinutemailer} iconClass={'fill-redish mb-1 ml-4 mr-2 translate-y-1'} text={'Submit'} txtClass={'font-extrabold text-bluish-dark'}/>
         </button>
       </form>
       <CloseModal displayText={displayText} isOpen={isOpen} onClose={closeModal} children={<></>}/>
