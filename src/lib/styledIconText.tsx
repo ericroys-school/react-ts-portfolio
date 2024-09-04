@@ -16,7 +16,7 @@ export default function IconWithText({
 }: StyledIconText) {
 
   //basic defaults for text and icon styling
-  const default_tclass = 'ml-2';
+  const default_tclass = 'ml-2 ';
   const default_iclass = 'translate-y-1 ';
 
   //optionally append if input received
