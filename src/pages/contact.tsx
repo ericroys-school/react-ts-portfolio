@@ -14,7 +14,7 @@ export const Contact = () => {
     handleSubmit,
     reset,
     formState,
-    formState: { errors, isSubmitting, isSubmitSuccessful },
+    formState: { errors, isSubmitting },
   } = useForm<NewContact>({ resolver: zodResolver(ContactMeSchema) });
 
   //our modal/dialog management start with closed

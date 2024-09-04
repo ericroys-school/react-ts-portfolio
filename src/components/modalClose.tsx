@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import { SiBasicattentiontoken } from 'react-icons/si';
-import StyledIcon from '../lib/styledIcon';
 import IconWithText from '../lib/styledIconText';
 
 export type ModalProps = {
