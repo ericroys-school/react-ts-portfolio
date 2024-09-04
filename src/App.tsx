@@ -4,13 +4,13 @@ import { Footer } from './components/footer';
 
 const App = () => {
   return (
-    <>
+    <div className='min-h-screen flex flex-col'>
       <NavHeader />
-      <main className='mx-3 h-full'>
+      <main className='mx-3 flex flex-col grow pb-10'>
         <Outlet />
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -2,7 +2,7 @@ export const AboutPage = () => {
   return (
     <section className='text-center mt-6 flex flex-col align-middle '>
       <h1 className='text-4xl font-bold drop-shadow-abc'>About Us</h1>
-      <article className='flex-col w-2/3 self-center drop-shadow-md'>
+      <article className='flex-col w-2/3 self-center drop-shadow-md grow mb-auto'>
       <p className='mt-6 text-pretty drop-shadow-xl'>
         An Information Technology professional, with many years of direct
         experience in software development, systems integration, and systems
