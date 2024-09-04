@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { SiBasicattentiontoken } from 'react-icons/si';
 import IconWithText from '../lib/styledIconText';
+import React from 'react';
 
 export type ModalProps = {
   isOpen: boolean;
