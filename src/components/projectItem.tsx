@@ -4,6 +4,7 @@ import { getStackDetails } from '../data/stackMetaData';
 import { StyledIconListCard } from '../lib/card-styledIconList';
 import { Project } from '../types/project';
 import { StyledIconText } from '../types/styledIconTxt';
+import React from 'react';
 
 /**
  * Define the prop type accepted by the component

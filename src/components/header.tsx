@@ -1,6 +1,7 @@
 import { MdRocketLaunch } from 'react-icons/md';
 import { links } from '../data/navMetaData';
 import { StyledNav } from './navbar';
+import React from 'react';
 
 export const NavHeader = () => {
   return (
