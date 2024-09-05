@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import { getRoleDetails } from '../data/roleMetaData';
 import { getStackDetails } from '../data/stackMetaData';
 import { StyledIconListCard } from '../lib/card-styledIconList';
@@ -14,8 +13,7 @@ type Props = {
 
 export const ProjectItem = (props: Props) => {
   const { name, description, href, stack, role } = props.project;
-  const x = href;
-  console.log(href)
+
   //convert the tech stacks for use in display
   let t: StyledIconText[] = [];
   stack.forEach((p) => {
