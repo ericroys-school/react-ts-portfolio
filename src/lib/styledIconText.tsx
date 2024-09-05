@@ -1,3 +1,4 @@
+import React from 'react';
 import { StyledIconText } from '../types/styledIconTxt';
 import StyledIcon from './styledIcon';
 
@@ -5,16 +6,15 @@ import StyledIcon from './styledIcon';
  * A styled component with a left-side Icon with right-side text
  * Styling may be passed in for each
  * @param {StyledIconText}
- * @returns 
+ * @returns
  */
 export default function IconWithText({
   icon,
   iconClass,
   text,
   txtClass,
-  onClick
+  onClick,
 }: StyledIconText) {
-
   //basic defaults for text and icon styling
   const default_tclass = 'ml-2 ';
   const default_iclass = 'translate-y-1 ';
