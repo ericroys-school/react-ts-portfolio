@@ -14,7 +14,8 @@ type Props = {
 
 export const ProjectItem = (props: Props) => {
   const { name, description, href, stack, role } = props.project;
-
+  const x = href;
+  console.log(href)
   //convert the tech stacks for use in display
   let t: StyledIconText[] = [];
   stack.forEach((p) => {
@@ -70,11 +71,12 @@ export const ProjectItem = (props: Props) => {
             </div>
           </div>
           <div className='m-1 p-1'>
-            <NavLink
-              to={href}
+            <a
+              target='_blank'
+              href={href.toString()}
               className='font-bold pl-2 hover:shadow-md hover:shadow-greenish-light rounded-md text-bluish-dark'>
               More Information...
-            </NavLink>
+            </a>
           </div>
         </div>
       </div>
