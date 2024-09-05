@@ -1,4 +1,5 @@
 import { IconType } from 'react-icons';
+import { GrGraphQl } from 'react-icons/gr';
 
 /**
  * Define a Stack having an id, name, and icon
@@ -34,6 +35,13 @@ export const StackNames = {
   HTML: 'Html',
   CSS: 'Css',
   AJAX: 'Ajax',
+  JQuery: 'Jquery',
+  React: 'React',
+  BootStrap: 'Bootstrap',
+  Tailwind: 'Tailwind',
+  GrGraphQl: 'GraphQl',
+  GraphDB: 'Aura Graph Database',
+  Cypher: 'Cypher',
   VRO: 'VMware Aria Orchestrator',
   NOW: 'ServiceNow',
   NODEJS: 'NodeJS',
