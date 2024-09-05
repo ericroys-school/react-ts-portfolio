@@ -1,4 +1,3 @@
-import React from "react"
 import { footerLinks } from "../data/navMetaData"
 import { StyledNav } from "./navbar"
 

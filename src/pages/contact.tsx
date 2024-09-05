@@ -6,7 +6,6 @@ import { ContactMeSchema } from '../validators/validators';
 import { SiMinutemailer } from 'react-icons/si';
 import IconWithText from '../lib/styledIconText';
 import { CloseModal } from '../components/modalClose';
-import React from 'react';
 
 export const Contact = () => {
   const [count, setCount] = useState(0);

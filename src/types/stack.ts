@@ -1,5 +1,4 @@
 import { IconType } from 'react-icons';
-import { GrGraphQl } from 'react-icons/gr';
 
 /**
  * Define a Stack having an id, name, and icon

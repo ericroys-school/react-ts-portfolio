@@ -1,4 +1,3 @@
-import React from 'react';
 import { BackStacks, FrontStacks } from '../data/stackMetaData';
 import StyledIconText from '../lib/styledIconText';
 import { NavLink } from 'react-router-dom';

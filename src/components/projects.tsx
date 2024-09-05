@@ -1,4 +1,3 @@
-import React from 'react';
 import { projectData } from '../data/projectData';
 import { ProjectItem } from './projectItem';
 export const ProjectList = () => {

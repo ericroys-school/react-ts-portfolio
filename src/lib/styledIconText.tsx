@@ -1,4 +1,3 @@
-import React from 'react';
 import { StyledIconText } from '../types/styledIconTxt';
 import StyledIcon from './styledIcon';
 
