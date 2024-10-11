@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a re-make of an earlier project portfolio that was created in simple html and css. For this version the portfolio there are a few more technologies used, the styling is updated, and it encompasses more professional works along with more recent school projects.
+This is a re-make of an earlier project portfolio that was created in simple html and css. For this version of the portfolio there are a few more technologies used, the styling is updated, and it encompasses more professional works along with more recent school projects.
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ This is a re-make of an earlier project portfolio that was created in simple htm
 
 ### Tech Stack
 
-The portfolio application is built using React at the core. TypeScript is used instead of vanilla JS because I prefer to find my mistakes ealy and keep things from being completely open to interpretation. Coming from a Java background, it also makes a lot more practical sense. Tailwind is used for styling, including setting up custom themes and extensions to support the styling needs. React form hook is used for dealing with form handling and Zod is used for validation.
+The portfolio application is built using React at the core. TypeScript is used instead of vanilla JS because I prefer to find my mistakes early and keep things from being completely open to interpretation. Coming from a Java background, it also makes a lot more practical sense. Tailwind is used for styling, including setting up custom themes and extensions to support the styling needs. React form hook is used for dealing with form handling and Zod is used for validation.
 
 ### General Functionality
 
